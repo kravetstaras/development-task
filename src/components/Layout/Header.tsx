@@ -1,25 +1,33 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 import palette from "../../../palette";
-import { LOGO_SIZE } from '../../../constants';
+import { LOGO_SIZE } from "../../../constants";
 
-import OgilvyLogo from '../Common/OgilvyLogo';
-
+import OgilvyLogo from "../Common/OgilvyLogo";
 
 const StyledHeader = styled.header`
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 50px;
-    width: 100%;
-    background-color: ${palette.pure};
-    height: 50px;
+  padding: 0 20px;
+  background-color: ${palette.pure};
+  height: 50px;
+
+  .wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
     display: flex;
-` 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+`;
 
 export default function Header() {
   return (
-    <StyledHeader><OgilvyLogo size={LOGO_SIZE.SMALL}/></StyledHeader>
-  )
+    <StyledHeader>
+      <div className="wrapper">
+        <OgilvyLogo size={LOGO_SIZE.S} />
+        <div>1</div>
+      </div>
+    </StyledHeader>
+  );
 }
-

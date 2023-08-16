@@ -1,4 +1,9 @@
 export const LOGO_SIZE = {
-    LARGE: "l" as const,
-    SMALL: "s" as const,
-  };
+  L: "l" as const,
+  S: "s" as const,
+};
+
+export const BUTTON_HEIGHT = {
+  L: "l" as const,
+  S: "s" as const,
+};
