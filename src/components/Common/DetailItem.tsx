@@ -1,5 +1,6 @@
+import React from "react";
 import styled from "styled-components";
-import { palette } from "../../../styled-constants";
+import { palette } from "../../styled-constants";
 
 const StyledDetailItem = styled.li`
   border-radius: 3px;

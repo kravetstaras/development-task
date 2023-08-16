@@ -1,5 +1,6 @@
+import React from "react";
 import styled from "styled-components";
-import { palette } from "../../../styled-constants";
+import { palette } from "../../styled-constants";
 
 import backIcon from "../../assets/back-icon.svg";
 

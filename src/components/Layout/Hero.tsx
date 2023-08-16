@@ -1,10 +1,11 @@
+import React from "react";
 import styled from "styled-components";
-import OgilvyLogo from "../Common/OgilvyLogo";
-import { LOGO_SIZE } from "../../../constants";
-import { palette } from "../../../styled-constants";
+import OgilvyLogo from "../common/OgilvyLogo";
+import { LOGO_SIZE } from "../../constants";
+import { palette } from "../../styled-constants";
 import { Fragment } from "react";
-import DetailItem from "../Common/DetailItem";
-import ActionButton from "../Common/ActionButton";
+import DetailItem from "../common/DetailItem";
+import ActionButton from "../common/ActionButton";
 
 const StyledHero = styled.section`
   display: flex;

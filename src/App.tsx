@@ -1,7 +1,7 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-
 import Header from "./components/Layout/Header";
-import Container from "./components/Common/Container";
+import Container from "./components/common/Container";
 import Hero from "./components/Layout/Hero";
 import Navigation from "./components/Layout/Navigation";
 import { Latest, Performance, Portfolio, Reviews, Summary } from "./components";

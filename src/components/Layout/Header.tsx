@@ -1,12 +1,13 @@
+import React from "react";
 import styled from "styled-components";
 
-import { palette } from "../../../styled-constants";
-import { LOGO_SIZE } from "../../../constants";
+import { palette } from "../../styled-constants";
+import { LOGO_SIZE } from "../../constants";
 
-import OgilvyLogo from "../Common/OgilvyLogo";
-import ActionButton from "../Common/ActionButton";
-import Photo from "../Common/Photo";
-import BackButton from "../Common/BackButton";
+import OgilvyLogo from "../common/OgilvyLogo";
+import ActionButton from "../common/ActionButton";
+import Photo from "../common/Photo";
+import BackButton from "../common/BackButton";
 
 import logo from "../../assets/logo-icons/logo.svg";
 

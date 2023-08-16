@@ -5,7 +5,7 @@ import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
 import App from "./App.tsx";
-import { palette } from "../styled-constants";
+import { palette } from "./styled-constants";
 
 import NeutrifProRegular from "./assets/fonts/NeutrifPro/NeutrifPro-Regular.ttf";
 import NeutrifProMedium from "./assets/fonts/NeutrifPro/NeutrifPro-Medium.ttf";
@@ -13,7 +13,6 @@ import NeutrifProSemibold from "./assets/fonts/NeutrifPro/NeutrifPro-SemiBold.tt
 import NeutrifProBold from "./assets/fonts/NeutrifPro/NeutrifPro-Bold.ttf";
 import NeutrifProLight from "./assets/fonts/NeutrifPro/NeutrifPro-Light.ttf";
 
-// eslint-disable-next-line react-refresh/only-export-components
 const GlobalStyle = createGlobalStyle`
   ${reset}
 
@@ -65,5 +64,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 );

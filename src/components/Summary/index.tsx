@@ -1,10 +1,10 @@
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 import SummaryCard from "./SummaryCard";
 
 const summaryData = [
   {
     id: "1",
-    icon: "_mock_/summary/client-size.svg",
+    icon: "_mock_/summary/company.png",
     name: "Client Size",
     description:
       "View all the business sizes this agency current manages, as well as which business size they choose to work with the most.",
@@ -49,7 +49,7 @@ const summaryData = [
   },
   {
     id: "2",
-    icon: "_mock_/summary/industry-focus.svg",
+    icon: "_mock_/summary/location_search.png",
     name: "Industry focus",
     description:
       "See which industries this agency has the most experience and expertise in.",
@@ -95,7 +95,7 @@ const summaryData = [
   },
   {
     id: "3",
-    icon: "_mock_/summary/client-location.svg",
+    icon: "_mock_/summary/map_outlined.png",
     name: "Client Locations",
     description:
       "Check out where Ogilvy's clients are based thorough the world.",
@@ -144,7 +144,7 @@ const summaryData = [
   },
   {
     id: "4",
-    icon: "_mock_/summary/networks.svg",
+    icon: "_mock_/summary/globe.png",
     name: "Networks",
     description:
       "View all of the social networks this agency currently manages, as well as which networks they work with the most.",
@@ -192,7 +192,7 @@ const summaryData = [
   },
   {
     id: "5",
-    icon: "_mock_/summary/language.svg",
+    icon: "_mock_/summary/comment_text_outlined.png",
     name: "Language",
     description:
       "Check out where Ogilvy's clients are based thorough the world.",
@@ -220,7 +220,7 @@ const summaryData = [
   },
   {
     id: "6",
-    icon: "_mock_/summary/language.svg",
+    icon: "_mock_/summary/brush.png",
     name: "Services Offered",
     description:
       "View all of the social networks this agency currently manages, as well as which networks they work with the most.",
@@ -268,7 +268,7 @@ const summaryData = [
   },
   {
     id: "7",
-    icon: "_mock_/summary/budgets-and-pricing.svg",
+    icon: "_mock_/summary/dollar_outlined.png",
     name: "Budgets and pricing",
     description:
       "Here's what budgets Ogilvy works with, as well as some additional pricing info you might like to know.",

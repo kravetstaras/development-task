@@ -1,7 +1,7 @@
+import React from "react";
 import styled from "styled-components";
-
-import { BUTTON_HEIGHT } from "../../../constants";
-import { palette } from "../../../styled-constants";
+import { BUTTON_HEIGHT } from "../../constants";
+import { palette } from "../../styled-constants";
 
 type TActionButton = {
   height?: "l" | "s";
