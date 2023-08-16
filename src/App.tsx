@@ -1,25 +1,24 @@
-import {
-  //Route,
-  Routes,
-} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Header from "./components/Layout/Header";
 import Container from "./components/Common/Container";
+import Hero from "./components/Layout/Hero";
+import Navigation from "./components/Layout/Navigation";
+import { Latest, Performance, Portfolio, Reviews, Summary } from "./components";
 
 function App() {
   return (
     <Container>
       <Header />
+      <Hero />
+      <Navigation />
       <div className="wrapper">
-        as.fmasmfawmjlkfjalflsafawfasfwfasf Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Pariatur temporibus aperiam porro cum
-        numquam tempora veniam ipsa, voluptates modi ad error? Deserunt nihil
-        voluptatem, in harum natus inventore mollitia ex. Ogilvy Ogilvy Ogilvy
-        Ogilvy Ogilvy Ogilvy Ogilvy Ogilvy
         <Routes>
-          {/* <Route path="/welcome" element={< />} />
-        <Route path="/dashboard" element={</>} />
-        <Route path="/:id/offers/" element={< />} /> */}
+          <Route path="/summary" element={<Summary />} />
+          <Route path="/performance" element={<Performance />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/latest" element={<Latest />} />
         </Routes>
       </div>
     </Container>
