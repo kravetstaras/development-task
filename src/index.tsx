@@ -55,6 +55,7 @@ const GlobalStyle = createGlobalStyle`
 
   * {
     box-sizing: border-box;
+    font-family: "NeutrifPro";
   }
 `;
 
@@ -64,5 +65,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

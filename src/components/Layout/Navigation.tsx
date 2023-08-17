@@ -8,6 +8,7 @@ const StyledNavigation = styled.nav`
   justify-content: center;
   align-items: start;
   gap: 30px;
+  padding-bottom: 40px;
 
   a {
     text-decoration: none;
