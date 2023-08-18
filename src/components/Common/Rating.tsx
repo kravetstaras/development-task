@@ -15,8 +15,8 @@ const StyledRating = styled.div`
 export default function Rating({ rating }: TypeRating) {
   return (
     <StyledRating>
-      {Array.from({ length: rating }).map((_score) => (
-        <img src={star} alt="star-icon" />
+      {Array.from({ length: rating }).map((_score, index) => (
+        <img src={star} alt="star-icon" key={index} />
       ))}
     </StyledRating>
   );

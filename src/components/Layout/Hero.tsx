@@ -45,7 +45,7 @@ const StyledHero = styled.section`
     text-align: center;
     font-size: 14px;
     font-weight: 500;
-    line-height: 100%;
+    line-height: 120%;
     max-width: 458px;
     margin-bottom: 30px;
   }

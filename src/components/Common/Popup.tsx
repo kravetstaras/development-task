@@ -1,6 +1,6 @@
 import React, { ReactNode, useState } from "react";
 import styled from "styled-components";
-import { palette } from "../../styled-constants";
+import { breakpoints, palette } from "../../styled-constants";
 
 const StyledPopup = styled.div`
   position: fixed;
@@ -16,11 +16,19 @@ const StyledPopup = styled.div`
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    max-width: 580px;
+    width: 100%;
     padding: 30px;
     box-shadow: 0px 4px 10px 0px rgba(39, 40, 49, 0.03);
     background-color: ${palette.pure};
     border-radius: 2px;
     z-index: 999;
+  }
+
+  @media screen and (max-width: ${breakpoints.md}) {
+    .popup-body {
+      max-width: calc(100% - 40px);
+    }
   }
 `;
 

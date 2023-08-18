@@ -7,8 +7,8 @@ const StyledDetailItem = styled.li`
   background: ${palette.dangerBg};
   padding: 6px 10px 4px;
   color: ${palette.danger};
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 600;
   width: fit-content;
   white-space: nowrap;
 `;

@@ -5,7 +5,7 @@ import { palette } from "../../styled-constants";
 
 type TypeActionButton = {
   height?: "l" | "s";
-  type?: "button" | "submit" | "email";
+  type?: "button" | "submit" | "email" | "cancel";
   label?: string;
   onClick?: () => void;
 };
@@ -24,6 +24,14 @@ export default function ActionButton({
       >
         {label}
       </StyledActionLink>
+    );
+  }
+
+  if (type === "cancel") {
+    return (
+      <StyledCancelButton onClick={onClick} height={height} type="button">
+        {label}
+      </StyledCancelButton>
     );
   }
   return (
@@ -45,7 +53,6 @@ const styledButton = css<{ height: "l" | "s" }>`
     props.height === BUTTON_HEIGHT.L ? "11px 25px" : "6px 15px"};
   border-radius: 2px;
   border: none;
-  color: #fff;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -53,11 +60,14 @@ const styledButton = css<{ height: "l" | "s" }>`
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition:
+    background-color 1s ease,
+    color 1s ease;
 
   &:hover,
   &:active {
-    background-color: salmon;
+    background-color: ${palette.successBg};
+    color: ${palette.success};
   }
 `;
 
@@ -68,4 +78,23 @@ const StyledActionButton = styled.button<{ height }>`
 const StyledActionLink = styled.a<{ height; href }>`
   ${styledButton}
   text-decoration: none;
+`;
+
+const StyledCancelButton = styled.button<{ height }>`
+  ${styledButton}
+  padding: 11px 12px;
+  color: ${palette.dark};
+  background-color: ${palette.pure};
+  border: 1px solid #e9eaf1;
+  transition:
+    background-color 0.3s ease,
+    color 1s ease,
+    border 1s ease;
+
+  &:hover,
+  &:active {
+    background-color: ${palette.dangerBg};
+    color: ${palette.danger};
+    border: 1px solid ${palette.danger};
+  }
 `;

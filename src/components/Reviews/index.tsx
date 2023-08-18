@@ -7,7 +7,7 @@ import ReviewCard from "./review-card/ReviewCard";
 import ActionButton from "../common/ActionButton";
 import Popup from "../common/Popup";
 import { mockedReviews } from "./mockedData";
-import PopUpForm from "./PopUpForm";
+import ReviewForm from "./ReviewForm";
 
 const StyledReviews = styled.section`
   padding: 0 50px;
@@ -38,15 +38,13 @@ const StyledReviews = styled.section`
 
 export default function Reviews() {
   const [isVisible, setIsVisible] = useState(false);
-  const onSubmit = () => {
-    setIsVisible(false);
-  };
 
   return (
     <StyledReviews>
       {isVisible && (
         <Popup isOpen={isVisible} callback={setIsVisible}>
-          <PopUpForm name="popup" onSubmit={onSubmit} submitTitle="title" />
+          {/* @ts-ignore */}
+          <ReviewForm callback={setIsVisible} submitTitle="title" />
         </Popup>
       )}
       <div className="submit-section">
@@ -59,8 +57,8 @@ export default function Reviews() {
       </div>
       <Carousel />
       <div className="reviews-grid">
-        {mockedReviews.map((review) => (
-          <ReviewCard review={review} />
+        {mockedReviews.map((review, index) => (
+          <ReviewCard review={review} key={index} />
         ))}
       </div>
     </StyledReviews>
