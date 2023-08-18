@@ -19,6 +19,7 @@ const StyledAuthor = styled.div`
       font-size: 16px;
       font-weight: 500;
       color: ${palette.dark};
+      margin-bottom: 5px;
 
       &.position {
         color: ${palette.primary};

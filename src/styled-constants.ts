@@ -4,6 +4,7 @@ export const palette = {
   danger: "#FE5359",
   dangerBg: "rgba(253, 83, 89, 0.1)",
   dark: "#272831",
+  darkBg: "rgba(39, 40, 49, 0.8)",
   grey: "#D6D7E1",
   light: "#FAFAFD",
   primary: "#9193A9",
