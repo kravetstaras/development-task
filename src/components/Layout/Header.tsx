@@ -51,7 +51,10 @@ export default function Header() {
         </div>
         <OgilvyLogo size={LOGO_SIZE.S} />
         <div className="right">
-          <ActionButton onClick={() => console.log("need to add feat")} />
+          <ActionButton
+            type="email"
+            onClick={() => console.log("need to add feat")}
+          />
           <Photo />
         </div>
       </div>

@@ -2,11 +2,11 @@ import React, { Fragment } from "react";
 import SummaryCard from "./SummaryCard";
 import styled from "styled-components";
 
-import Form from "../common/Form";
-import summaryData from "./mockedData.json";
-import { palette } from "../../styled-constants";
+import Form from "./SummaryForm";
+import { mockedCards, mockedPartners } from "./mockedData";
+import { breakpoints, palette } from "../../styled-constants";
 
-import PartnerCard from "./PartnerCard";
+import PartnerCard from "./SummaryPartnerCard";
 
 import flare from "../../assets/flare.svg";
 
@@ -15,8 +15,12 @@ const StyledSummary = styled.section`
   padding: 7px 50px 0 40px;
 
   .card-holder {
-    column-count: 2;
+    column-count: 1;
     column-gap: 30px;
+
+    @media screen and (min-width: ${breakpoints.md}) {
+      column-count: 2;
+    }
   }
 
   .contact-us {
@@ -85,13 +89,7 @@ const StyledSummary = styled.section`
       }
 
       button {
-        border: none;
-        border-radius: 2px;
-        background-color: ${palette.progressDanger};
-        color: ${palette.pure};
-        font-weight: 600;
-        padding: 11px 25px;
-        float: right;
+        margin-left: auto;
         margin-top: 20px;
       }
     }
@@ -106,35 +104,11 @@ const StyledSummary = styled.section`
 `;
 
 export default function Summary() {
-  // move to mock
-  const partners = [
-    {
-      name: "Operam",
-      description: "Augmenting teams through tech and automation.",
-      href: "href.com",
-      logo: "234.src",
-    },
-    {
-      name: "LYFE Marketing",
-      description:
-        "A leading social media management company that helps businesses grow online. ",
-      href: "href.com",
-      logo: "234.src",
-    },
-    {
-      name: "BBDO",
-      description:
-        "BBDO is a worldwide advertising agency network, with its headquarters in New York City.",
-      href: "href.com",
-      logo: "234.src",
-    },
-  ];
   return (
     <StyledSummary>
-      <section className="card-holder">
-        {summaryData?.data.map((card) => (
-          <Fragment key={card.id}>
-            {/* @ts-ignore */}
+      <div className="card-holder">
+        {mockedCards?.map((card, index) => (
+          <Fragment key={card.id + index}>
             <SummaryCard
               name={card.name}
               description={card.description}
@@ -145,8 +119,8 @@ export default function Summary() {
             />
           </Fragment>
         ))}
-      </section>
-      <section className="contact-us">
+      </div>
+      <div className="contact-us">
         <img src={flare} alt="flare icon" />
         <h2>Great Match!</h2>
         <div className="text-block">
@@ -157,23 +131,20 @@ export default function Summary() {
             Get in touch and feel free to ask any questions you might have.
           </p>
         </div>
-        <Form
-          submitTitle="Contact Ogilvy"
-          name="contactForm"
-          onSubmit={(message) => console.log(message)}
-        />
-      </section>
-      <section className="partners">
-        {partners.length > 0 &&
-          partners.map((partner) => (
+        <Form name="contactForm" onSubmit={(message) => console.log(message)} />
+      </div>
+      <div className="partners">
+        {mockedPartners.length > 0 &&
+          mockedPartners.map((partner) => (
             <PartnerCard
+              key={partner.name}
               logo={partner.logo}
               href={partner.href}
               name={partner.name}
               description={partner.description}
             />
           ))}
-      </section>
+      </div>
     </StyledSummary>
   );
 }

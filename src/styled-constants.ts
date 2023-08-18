@@ -19,4 +19,5 @@ export const palette = {
 export const breakpoints = {
   xs: "480px",
   md: "768px",
+  lg: "1280px",
 };

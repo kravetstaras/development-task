@@ -2,7 +2,7 @@ import React from "react";
 import { ReactNode } from "react";
 import styled from "styled-components";
 
-type TContainer = {
+type TypeContainer = {
   children: ReactNode;
 };
 
@@ -19,6 +19,6 @@ const StyledContainer = styled.main`
   }
 `;
 
-export default function Container({ children }: TContainer) {
+export default function Container({ children }: TypeContainer) {
   return <StyledContainer>{children}</StyledContainer>;
 }

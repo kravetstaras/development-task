@@ -1,32 +1,48 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { BUTTON_HEIGHT } from "../../constants";
 import { palette } from "../../styled-constants";
 
-type TActionButton = {
+type TypeActionButton = {
   height?: "l" | "s";
+  type?: "button" | "submit" | "email";
   label?: string;
-  onClick: () => void;
+  onClick?: () => void;
 };
 
 export default function ActionButton({
   height = BUTTON_HEIGHT.S,
   label = "Contact Ogilvy",
+  type = "button",
   onClick,
-}: TActionButton) {
+}: TypeActionButton) {
+  if (type === "email") {
+    return (
+      <StyledActionLink
+        href="mailto:ogivly@example.com?subject=Feedback&body=Message"
+        height={height}
+      >
+        {label}
+      </StyledActionLink>
+    );
+  }
   return (
-    <StyledActionButton onClick={onClick} height={height}>
+    <StyledActionButton
+      onClick={type === "button" ? onClick : null}
+      height={height}
+      type={type}
+    >
       {label}
     </StyledActionButton>
   );
 }
 
-const StyledActionButton = styled.button<{ height: "l" | "s" }>`
+const styledButton = css<{ height: "l" | "s" }>`
   background-color: ${palette.secondary};
   color: ${palette.pure};
   height: ${(props) => (props.height === BUTTON_HEIGHT.L ? "40px" : "30px")};
   padding: ${(props) =>
-    props.height === BUTTON_HEIGHT.L ? "11px : 25px" : "6px 15px"};
+    props.height === BUTTON_HEIGHT.L ? "11px 25px" : "6px 15px"};
   border-radius: 2px;
   border: none;
   color: #fff;
@@ -43,4 +59,13 @@ const StyledActionButton = styled.button<{ height: "l" | "s" }>`
   &:active {
     background-color: salmon;
   }
+`;
+
+const StyledActionButton = styled.button<{ height }>`
+  ${styledButton}
+`;
+
+const StyledActionLink = styled.a<{ height; href }>`
+  ${styledButton}
+  text-decoration: none;
 `;

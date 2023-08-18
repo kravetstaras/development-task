@@ -101,7 +101,7 @@ export default function Hero() {
         ))}
       </ul>
       <p className="description">{heroContent.description}</p>
-      <ActionButton onClick={() => console.log("need to add feat")} />
+      <ActionButton type="email" />
     </StyledHero>
   );
 }

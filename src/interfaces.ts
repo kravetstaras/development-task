@@ -7,5 +7,5 @@ export interface IAuthor {
 export interface IPublication {
   message: string;
   author: IAuthor;
-  publishedAt: Date;
+  publishedAt: string;
 }

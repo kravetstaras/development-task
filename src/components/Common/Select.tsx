@@ -32,7 +32,8 @@ export default function Select({
 }: TypeSelect) {
   return (
     <StyledSelect name="select">
-      <option value={label} selected hidden>
+      {/*@ts-ignore*/}
+      <option value={label} defaultValue hidden>
         {label}
       </option>
       {options.length > 0 &&

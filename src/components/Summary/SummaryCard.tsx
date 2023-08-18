@@ -3,7 +3,7 @@ import { palette } from "../../styled-constants";
 import useDynamicImage from "../../hooks/useDynamicImage";
 import LazyLoadedImage from "../common/LazyLoadedImage";
 import React from "react";
-import ProgressItem from "./ProgressItem";
+import SummaryProgressItem from "./SummaryProgressItem";
 import MarkBlock from "../common/MarkBlock";
 import Select from "../common/Select";
 
@@ -107,7 +107,7 @@ export default function SummaryCard({
       {progresses.length > 0 && (
         <ul>
           {progresses.map((progress) => (
-            <ProgressItem
+            <SummaryProgressItem
               key={progress.id}
               percent={progress.value.percentage}
               value={progress.value.value}
