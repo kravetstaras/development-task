@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[366],{4366:function(p,a,e){p.exports=e.p+"static/media/trending-up.dc0832d9da63b82dc2af.svg"}}]);

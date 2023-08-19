@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[801],{801:function(e,p,s){e.exports=s.p+"static/media/google.30b61e72bd8ed87e36dd.svg"}}]);

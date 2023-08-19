@@ -1,0 +1,26 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" fill="#E5E5E5"/>
+<g id="Latest" clip-path="url(#clip0_0_1)">
+<rect width="1280" height="6916" transform="translate(-516 -698)" fill="#FAFAFD"/>
+<g id="Rectangle" filter="url(#filter0_d_0_1)">
+<rect x="-476" y="-26" width="1200" height="2950" rx="2" fill="white"/>
+</g>
+<g id="facebook_square">
+<path id="Icon color" d="M28 6.66667V25.3333C28 26.8061 26.8061 28 25.3333 28H20.3333C19.9651 28 19.6667 27.7015 19.6667 27.3333V19.3333H22.7867C23.1035 19.3334 23.3766 19.1104 23.44 18.8L23.92 16.4C23.9398 16.303 23.9155 16.2023 23.8537 16.125C23.7919 16.0478 23.6989 16.002 23.6 16H19.6667V11.6667C19.6667 11.4826 19.8159 11.3333 20 11.3333H23.3333C23.7015 11.3333 24 11.0349 24 10.6667V8.66667C24 8.29848 23.7015 8 23.3333 8H20C17.7909 8 16 9.79086 16 12V16H14.36C13.9918 16 13.6933 16.2985 13.6933 16.6667V18.6667C13.6933 19.0349 13.9918 19.3333 14.36 19.3333H16V27.3333C16 27.7015 15.7015 28 15.3333 28H6.66667C5.19391 28 4 26.8061 4 25.3333V6.66667C4 5.19391 5.19391 4 6.66667 4H25.3333C26.8061 4 28 5.19391 28 6.66667Z" fill="#3B5998"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_1" x="-486" y="-32" width="1220" height="2970" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.152941 0 0 0 0 0.156863 0 0 0 0 0.192157 0 0 0 0.03 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+<clipPath id="clip0_0_1">
+<rect width="1280" height="6916" fill="white" transform="translate(-516 -698)"/>
+</clipPath>
+</defs>
+</svg>

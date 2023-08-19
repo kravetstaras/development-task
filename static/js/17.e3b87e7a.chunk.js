@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[17],{8017:function(e,p,a){e.exports=a.p+"static/media/card-icon.5999385756eaf1ee8b95.svg"}}]);

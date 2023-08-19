@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[757],{4757:function(e,p,a){e.exports=a.p+"static/media/facebook.8dcb9b8d0d4d15a92fed.svg"}}]);

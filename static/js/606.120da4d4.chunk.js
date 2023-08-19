@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[606],{1606:function(a,p,s){a.exports=s.p+"static/media/arrow-dropdown.69aa658b066bfa9692a2.svg"}}]);

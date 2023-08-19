@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[52],{5052:function(e,p,c){e.exports=c.p+"static/media/flare.16bc2646219884ee6cc2.svg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[783],{9783:function(p,s,a){p.exports=a.p+"static/media/instagram.6d160b1226c9619767cf.svg"}}]);
