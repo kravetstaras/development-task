@@ -66,7 +66,7 @@ const styledButton = css<{ height: "l" | "s" }>`
 
   &:hover,
   &:active {
-    background-color: ${palette.successBg};
+    background-color: ${palette.successBg100};
     color: ${palette.success};
   }
 `;

@@ -14,7 +14,9 @@ export const palette = {
   pure: "#FFFFFF",
   secondary: "#FE5459",
   success: "#27AE60",
-  successBg: "rgba(33, 150, 83, 0.1)",
+  successBg100: "rgba(33, 150, 83, 0.1)",
+  successBg50: "rgba(33, 150, 83, 0.05)",
+  border: "#E9EAF1",
 };
 
 export const breakpoints = {

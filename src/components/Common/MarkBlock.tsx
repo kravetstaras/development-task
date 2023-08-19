@@ -11,7 +11,7 @@ type TypeMarkBlock = {
 
 const StyledMarkBlock = styled.div<{ color?: "blue" | "green" }>`
   background-color: ${(props) =>
-    props.color === MARK_COLOR.BLUE ? palette.blueBg : palette.successBg};
+    props.color === MARK_COLOR.BLUE ? palette.blueBg : palette.successBg100};
   height: 80px;
   width: 100%;
   position: relative;
